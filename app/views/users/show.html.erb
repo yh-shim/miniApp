@@ -1,0 +1,23 @@
+<div class="contents row" >
+
+
+  <p class="mypage"><%= @name %>さんのマイページ</p>
+  <% @posts.each do |post| %>
+    <div class="content_post">
+      <%= simple_format(post.text) %>
+    </div>
+    <div class="content_date">
+      <div class="mypage_date">
+      <%= post.created_at.strftime("%Y年%m月%d日 %H:%M") %>
+      </div>
+      <div class="content_edit">
+        <%= link_to '編集する', "/posts/#{post.id}/edit", method: :get %>
+      </div>
+      <div class="content_destroy">
+        <%= link_to 'この記事を削除', "/posts/#{post.id}", method: :delete %>
+      </div>
+      <div class="blank"></div>
+    </div>
+  <% end %>
+  <%= paginate(@posts) %>
+</div>

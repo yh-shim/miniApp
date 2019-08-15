@@ -1,0 +1,71 @@
+h3 {
+  text-align: center;
+}
+
+.textarea {
+  height: 500px;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
+}
+
+.btn {
+  float: right;
+  margin-right: 44%;
+}
+
+.content_post {
+  text-align: center;
+  border: solid 2px #e0e0e0;
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+.content_date {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blank {
+  height: 20px;
+}
+
+.mypage_date {
+  float: left;
+}
+
+.content_edit {
+  float: left;
+  /* margin-left: 40%; */
+}
+
+.content_destroy {
+  float: right;
+  /* margin-right: 10%; */
+}
+
+.user_name {
+  width: 80%;
+  float: right;
+}
+
+.pagination {
+  background-color: #b2ebf2;
+  text-align: center;
+}
+
+em {
+  color: grey;
+}
+
+.description {
+  color: gray;
+}
+
+.mypage {
+  font-size: 30px;
+  font-weight: bold;
+  color: grey;
+}

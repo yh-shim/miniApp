@@ -1,0 +1,9 @@
+<div class="contents row">
+  <%= form_tag("/posts/#{@post.id}", method: :patch) do %>
+    <h3 class="description">
+      投稿記事編集中...
+    </h3>
+    <textarea placeholder="text" cols="30" rows="10" name="text" class="textarea"><%= @post.text %></textarea>
+    <input type="submit" value="完了！" class="right">
+  <% end %>
+</div>

@@ -1,0 +1,7 @@
+<div class="content_post">
+  <%= simple_format(post.text) %>
+</div>
+<div class="content_date">
+  <%= post.created_at.strftime("%Y年%m月%d日 %H:%M") %>
+  <%= "投稿者：#{post.user.name}" %>
+</div>
