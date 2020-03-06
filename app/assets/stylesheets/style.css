@@ -69,3 +69,7 @@ em {
   font-weight: bold;
   color: grey;
 }
+
+.row {
+  height: 80vh;
+}
